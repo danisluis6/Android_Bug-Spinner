@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lorence.notificationdemo.fix.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="1">
+        <Spinner
+            android:id="@+id/spNation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/edittext_border"
+            android:paddingLeft="10dp"
+            android:spinnerMode="dialog"
+            android:visibility="invisible" />
+        <EditText
+            android:id="@+id/edtNation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/edittext_border"
+            android:textColor="@drawable/text_black"
+            android:editable="false"
+            android:hint="@string/activity_hint_nation"
+            android:inputType="textCapCharacters|textAutoCorrect"
+            android:maxLength="50"
+            android:minLines="1"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>
